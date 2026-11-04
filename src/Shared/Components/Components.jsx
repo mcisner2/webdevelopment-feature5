@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "@/Shared/Components/Main/Navigation.jsx";
-import { SignPage } from "./signPage.jsx";
+import { SignPage } from "./Signs/Components/signPage.jsx";
 import { HistoryList } from "@/Misc/Features/History/Components/HistoryList.jsx";
 import { getAllSigns } from "@/Signs/Models/signModel.jsx";
 
