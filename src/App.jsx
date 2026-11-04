@@ -5,7 +5,7 @@
 
 import "@/Shared/parseConfig.jsx";
 
-import Components from "./Signs/Components/Components.jsx";
+import Components from "./Shared/Components/Components.jsx";
 
 export default function App() {
   return <Components />;

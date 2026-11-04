@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "@/Shared/Components/Main/Navigation.jsx";
-import { SignPage } from "./Signs/Components/signPage.jsx";
-import { HistoryList } from "@/Misc/Features/History/Components/HistoryList.jsx";
-import { getAllSigns } from "@/Signs/Models/signModel.jsx";
+import { SignPage } from "./Signs/Components/SignPage.jsx";
+import { HistoryList } from "./History/Components/HistoryList.jsx";
+import { getAllSigns } from "./Signs/Models/signModel.jsx";
 
 export default function Components() {
   const [signs, setSigns] = useState([]);
