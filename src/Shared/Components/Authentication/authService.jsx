@@ -23,12 +23,6 @@ export const createUser = (newUser) => {
 
 // used in auth login component
 export const loginUser = (currUser) => {
-  // const user = new Parse.User();
-
-  // user.set("password", currUser.password);
-  // user.set("username", currUser.email);
-
-  // console.log("User: ", user);
   console.log("currUser: ", currUser);
   return Parse.User.logIn(currUser.email, currUser.password)
     .then((currUserSaved) => {
@@ -45,4 +39,8 @@ export const checkUser = () => {
 
 export const logoutUser = () => {
   return Parse.User.logOut();
+};
+
+export const getCurrentUser = () => {
+  return Parse.User.current();
 };

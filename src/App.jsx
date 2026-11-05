@@ -1,7 +1,5 @@
 // App.jsx
-// Root component. Initializes Parse first so the connection is
-// configured before any model runs a query, then renders the
-// router/components tree.
+// Root component. Initializes Parse before rendering the router/components tree.
 
 import "@/Shared/parseConfig.jsx";
 
