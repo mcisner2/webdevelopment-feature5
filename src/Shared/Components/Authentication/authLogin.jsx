@@ -1,7 +1,11 @@
+// authLogin.jsx
+
 import React, { useEffect, useState } from "react";
 import { checkUser, loginUser } from "./authService";
 import AuthForm from "./authForm";
 import { useNavigate } from "react-router-dom";
+
+// define AuthLogin component
 
 const AuthLogin = () => {
   const navigate = useNavigate();
@@ -38,6 +42,8 @@ const AuthLogin = () => {
     }
   }, [navigate, currentUser, add]);
 
+  // handle input changes
+
   const onChangeHandler = (e) => {
     e.preventDefault();
     console.log(e.target);
@@ -50,12 +56,15 @@ const AuthLogin = () => {
     });
   };
 
+  // handle form submission
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     console.log("submitted: ", e.target);
     setAdd(true);
   };
 
+  // return login form
   return (
     <div>
       <AuthForm

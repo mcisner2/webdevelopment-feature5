@@ -1,7 +1,4 @@
 // ProtectedRoute.jsx 
-// Decides whether a visitor may continue.
-// flag - true when a user is logged in (comes from the auth check)
-// path - the protected route to send an allowed user to
 
 import { Navigate, useNavigate } from "react-router-dom";
 const ProtectedRoute = ({ flag, ...rest }) => {

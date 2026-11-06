@@ -1,8 +1,12 @@
+// authForm.jsx
+
 import React from "react";
 
+// define AuthForm component
 const AuthForm = ({ user, isLogin, onChildChange, onSubmit }) => {
   return (
     <form onSubmit={onSubmit} autoComplete="off">
+      {/* conditionally render first and last name if not login */}
       {!isLogin ? (
         <div>
           <div className="form-group">
@@ -36,6 +40,7 @@ const AuthForm = ({ user, isLogin, onChildChange, onSubmit }) => {
       ) : (
         <></>
       )}
+      {/* email and password pop up even if not logging in */}
       <div>
         <div className="form-group">
           <label>Email</label>

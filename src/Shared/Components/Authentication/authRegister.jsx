@@ -1,8 +1,11 @@
+// authRegister.jsx
+
 import React, { useEffect, useState } from "react";
 import { checkUser, createUser } from "./authService";
 import AuthForm from "./authForm";
 import { useNavigate } from "react-router-dom";
 
+// define AuthRegister component
 const AuthRegister = () => {
   const navigate = useNavigate();
 
@@ -41,6 +44,7 @@ const AuthRegister = () => {
     }
   }, [navigate, newUser, add]);
 
+  // handle input changes
   const onChangeHandler = (e) => {
     e.preventDefault();
     console.log(e.target);
@@ -53,12 +57,14 @@ const AuthRegister = () => {
     });
   };
 
+  // handle form submission
   const onSubmitHandler = (e) => {
     e.preventDefault();
     console.log("submitted: ", e.target);
     setAdd(true);
   };
 
+  // return register form
   return (
     <div>
       <AuthForm

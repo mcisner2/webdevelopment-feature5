@@ -1,3 +1,5 @@
+// authService.jsx
+
 import Parse from "parse";
 
 // used in auth register component
@@ -32,6 +34,8 @@ export const loginUser = (currUser) => {
       alert(`Error: ${error.message}`);
     });
 };
+
+// export check user functions for use in other components
 
 export const checkUser = () => {
   return Parse.User.current()?.authenticated;

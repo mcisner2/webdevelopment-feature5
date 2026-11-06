@@ -1,5 +1,4 @@
 // MainHome.jsx
-// Checks whether someone is logged in and renders the appropriate route based on the result.
 
 import { useState, useEffect } from "react";
 import ProtectedRoute from "./ProtectedRoute";
