@@ -51,8 +51,7 @@ export default function Components() {
         <Route path="/home" element={<MainHome />} />
         <Route path="/user" element={<MainGood />} />
         <Route path="/profile" element={<ProfilePage />} />
-<Route path="/auth/forgot" element={<ForgotPassword />} />
-
+        <Route path="/auth/forgot" element={<ForgotPassword />} />
         <Route path="*" element={<p>Page not found</p>} />
       </Routes>
     </Router>

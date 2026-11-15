@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 // import two functions to convert letter to letter in ASCII and
   // convert rgba bytes into a pixelated image
 import { labelToLetter } from "../Services/getData.jsx";
-import { SignImage } from "./signImage.jsx";
+import { SignImage } from "./SignImage.jsx";
 
 // construct page here with title and signs
 export function SignPage({ title = "ASL Directory", signs = [] }) {

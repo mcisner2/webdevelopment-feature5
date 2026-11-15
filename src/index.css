@@ -1,0 +1,206 @@
+/* index.css
+   Site-wide styles. Imported once in main.jsx, so every page picks them up.
+   Colors live in variables at the top, so the whole look can be changed in
+   one place. Dark mode follows the visitor's system setting. */
+
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #1b2430;
+  --muted: #566274;
+  --primary: #1f4e8c;
+  --primary-hover: #163a69;
+  --on-primary: #ffffff;
+  --accent: #e8f0fb;
+  --border: #d6dde8;
+  --danger: #b3261e;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(20, 30, 50, 0.08);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f141b;
+    --surface: #18202b;
+    --text: #e8edf4;
+    --muted: #a3afc0;
+    --primary: #7fb2f0;
+    --primary-hover: #a6c9f5;
+    --on-primary: #0f141b;
+    --accent: #1e2b3d;
+    --border: #2c3a4d;
+    --danger: #ff8a80;
+    --shadow: none;
+  }
+}
+
+/* ---------- base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* keeps content a readable width and centered */
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 1.5rem 0 0.75rem;
+}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+a { color: var(--primary); }
+a:hover { color: var(--primary-hover); }
+
+/* visible keyboard focus on everything interactive */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- navigation ---------- */
+nav[aria-label="Main"] {
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav[aria-label="Main"] a {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+nav[aria-label="Main"] a:hover {
+  background: var(--accent);
+}
+
+/* React Router adds the "active" class to the link for the current page */
+nav[aria-label="Main"] a.active {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+/* ---------- forms and buttons ---------- */
+label {
+  display: inline-block;
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--on-primary);
+  border: 0;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background: var(--primary-hover);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- cards: history events, awareness entries, quiz questions ---------- */
+article,
+fieldset {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 0.4rem;
+}
+
+/* ---------- sign images ---------- */
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure canvas {
+  image-rendering: pixelated;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+figcaption {
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* ---------- status and error messages ---------- */
+[role="status"] { color: var(--muted); }
+[role="alert"] { color: var(--danger); font-weight: 500; }
+
+/* ---------- footer ---------- */
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}

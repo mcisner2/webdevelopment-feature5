@@ -3,8 +3,8 @@ import {
   useEffect,
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
-import { labelToLetter } from "./Components/Services/getData.js";
-import { signImage } from "./Components/Main/signImage.js";
+import { labelToLetter } from "../Signs/Services/getData.jsx";
+import { signImage } from "../Signs/Components/SignImage.jsx";
 
 export function Header({ title, signs = [] }) {
   useEffect(() => {
