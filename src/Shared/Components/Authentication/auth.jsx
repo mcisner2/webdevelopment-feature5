@@ -1,14 +1,8 @@
-// auth.jsx
-
-
-// import React and hooks from React
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { checkUser } from "./authService";
 
-// go off of class lecture example and define AuthModule
 const AuthModule = () => {
   const navigate = useNavigate();
 
@@ -20,8 +14,6 @@ const AuthModule = () => {
     }
   }, [navigate]);
 
-
-  // return login and register buttons
   return (
     <div>
       <Link to="/auth/register">
@@ -32,6 +24,10 @@ const AuthModule = () => {
       <Link to="/auth/login">
         <button>Login</button>
       </Link>
+      <br />
+      <br />
+      {/* link to the password reset page */}
+      <Link to="/auth/forgot">Forgot password?</Link>
     </div>
   );
 };

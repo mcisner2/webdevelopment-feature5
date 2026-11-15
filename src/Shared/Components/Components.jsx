@@ -12,6 +12,8 @@ import AuthRegister from "./Authentication/authRegister.jsx";
 import AuthLogin from "./Authentication/authLogin.jsx";
 import MainHome from "./protectedRoute/MainHome.jsx";
 import MainGood from "./protectedRoute/MainGood.jsx";
+import ProfilePage from "./Profile/ProfilePage.jsx";
+import ForgotPassword from "./Profile/ForgotPassword.jsx";
 
 export default function Components() {
   const [signs, setSigns] = useState([]);
@@ -48,6 +50,8 @@ export default function Components() {
         <Route path="/auth/login" element={<AuthLogin />} />
         <Route path="/home" element={<MainHome />} />
         <Route path="/user" element={<MainGood />} />
+        <Route path="/profile" element={<ProfilePage />} />
+<Route path="/auth/forgot" element={<ForgotPassword />} />
 
         <Route path="*" element={<p>Page not found</p>} />
       </Routes>

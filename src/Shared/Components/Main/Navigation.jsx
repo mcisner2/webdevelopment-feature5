@@ -1,26 +1,29 @@
 // Navigation.jsx
-// Enables site navigation and shows the login/register link when no user is logged in.
+// Site-wide navigation. Each NavLink matches one <Route> in Components.jsx.
 
 import { NavLink, useLocation } from "react-router-dom";
-import { checkUser } from "@/Shared/Components/Authentication/authService";
+import { checkUser } from "@/Shared/Components/Authentication/authService.jsx";
 
 export default function Navigation() {
-  // Component re-renders when the location changes (import for My Account link)
+  // Reading the location makes this component re-render on every page
+  // change, so the links below update right after a login or logout.
   useLocation();
 
   // true when a Parse user is logged in
   const loggedIn = !!checkUser();
 
-  // Logged in users see the My Account link
-  // Logged-out users see the auth menu instead.
-  
   return (
     <nav aria-label="Main" style={{ display: "flex", gap: "16px" }}>
       <NavLink to="/">Signs</NavLink>
       <NavLink to="/history">History</NavLink>
 
+      {/* Logged-in users see their account and profile links. Logged-out
+          users see the auth menu instead. */}
       {loggedIn ? (
-        <NavLink to="/home">My Account</NavLink>
+        <>
+          <NavLink to="/home">My Account</NavLink>
+          <NavLink to="/profile">Profile</NavLink>
+        </>
       ) : (
         <NavLink to="/auth">Login / Register</NavLink>
       )}

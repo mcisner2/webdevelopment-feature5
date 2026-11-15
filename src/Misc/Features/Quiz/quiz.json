@@ -1,38 +1,752 @@
 [
-    {
-      "id": 1,
-      "type": "radio",
-      "question": "When did Notre Dame pilot its first ASL class?",
-      "options": [
-        { "value": "wrong1", "text": "2025" },
-        { "value": "correct", "text": "2026" },
-        { "value": "wrong2", "text": "2005" },
-        { "value": "wrong3", "text": "1995" }
-      ],
-      "correct_answer": "correct"
-    },
-    {
-        "id": 2,
-        "type": "radio",
-        "question": "When was the Americans with Disabilities Act (ADA) signed into law?",
-        "options": [
-          { "value": "correct", "text": "1990" },
-          { "value": "wrong1", "text": "1992" },
-          { "value": "wrong2", "text": "1985" },
-          { "value": "wrong3", "text": "1995" }
-        ],
-        "correct_answer": "correct"
+  {
+    "id": 1,
+    "type": "radio",
+    "category": "history",
+    "question": "When was the Americans with Disabilities Act (ADA) signed into law?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "1990"
       },
       {
-        "id": 3,
-        "type": "radio",
-        "question": "Which US President signed the ADA into law?",
-        "options": [
-          { "value": "correct", "text": "George H.W. Bush" },
-          { "value": "wrong1", "text": "George W. Bush" },
-          { "value": "wrong2", "text": "Ronald Reagan" },
-          { "value": "wrong3", "text": "Bill Clinton" }
-        ],
-        "correct_answer": "correct"
+        "value": "wrong1",
+        "text": "1992"
+      },
+      {
+        "value": "wrong2",
+        "text": "1985"
+      },
+      {
+        "value": "wrong3",
+        "text": "1995"
       }
-  ]
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 2,
+    "type": "radio",
+    "category": "history",
+    "question": "Which US President signed the ADA into law?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "George H.W. Bush"
+      },
+      {
+        "value": "wrong1",
+        "text": "George W. Bush"
+      },
+      {
+        "value": "wrong2",
+        "text": "Ronald Reagan"
+      },
+      {
+        "value": "wrong3",
+        "text": "Bill Clinton"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 3,
+    "type": "radio",
+    "category": "language",
+    "question": "Is American Sign Language (ASL) a complete language with its own grammar?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Yes, it has its own grammar and structure"
+      },
+      {
+        "value": "wrong1",
+        "text": "No, it is English signed word for word"
+      },
+      {
+        "value": "wrong2",
+        "text": "No, it is a collection of gestures with no grammar"
+      },
+      {
+        "value": "wrong3",
+        "text": "No, it is a code that only works for the alphabet"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 4,
+    "type": "radio",
+    "category": "language",
+    "question": "Which language most strongly influenced the development of ASL?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "British Sign Language"
+      },
+      {
+        "value": "correct",
+        "text": "French Sign Language"
+      },
+      {
+        "value": "wrong2",
+        "text": "German Sign Language"
+      },
+      {
+        "value": "wrong3",
+        "text": "Italian Sign Language"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 5,
+    "type": "radio",
+    "category": "language",
+    "question": "Do people in the United States and the United Kingdom use the same sign language?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Yes, sign language is the same everywhere"
+      },
+      {
+        "value": "wrong2",
+        "text": "Yes, they only differ in accent"
+      },
+      {
+        "value": "correct",
+        "text": "No, ASL and British Sign Language are different languages"
+      },
+      {
+        "value": "wrong3",
+        "text": "Yes, both countries use ASL"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 6,
+    "type": "radio",
+    "category": "language",
+    "question": "How many hands does the ASL manual alphabet use for one letter?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Two hands"
+      },
+      {
+        "value": "wrong2",
+        "text": "It depends on the word"
+      },
+      {
+        "value": "wrong3",
+        "text": "ASL does not use fingerspelling"
+      },
+      {
+        "value": "correct",
+        "text": "One hand"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 7,
+    "type": "radio",
+    "category": "language",
+    "question": "In ASL, what role do facial expressions and head movements play?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "They are part of the grammar, such as marking questions"
+      },
+      {
+        "value": "wrong1",
+        "text": "Nothing, they only show emotion"
+      },
+      {
+        "value": "wrong2",
+        "text": "They replace the hands"
+      },
+      {
+        "value": "wrong3",
+        "text": "They are only used when signing to children"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 8,
+    "type": "radio",
+    "category": "language",
+    "question": "Which three handshapes combine to make the ASL \"I love you\" sign?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "A, B, and C"
+      },
+      {
+        "value": "correct",
+        "text": "I, L, and Y"
+      },
+      {
+        "value": "wrong2",
+        "text": "L, O, and V"
+      },
+      {
+        "value": "wrong3",
+        "text": "I, U, and E"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 9,
+    "type": "radio",
+    "category": "language",
+    "question": "What is spelling a word letter by letter with the manual alphabet called?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Mouthing"
+      },
+      {
+        "value": "wrong2",
+        "text": "Classifiers"
+      },
+      {
+        "value": "correct",
+        "text": "Fingerspelling"
+      },
+      {
+        "value": "wrong3",
+        "text": "Lip reading"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 10,
+    "type": "radio",
+    "category": "language",
+    "question": "Why are the letters J and Z different from most letters in the ASL alphabet?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "They use two hands"
+      },
+      {
+        "value": "wrong2",
+        "text": "They are not part of ASL"
+      },
+      {
+        "value": "wrong3",
+        "text": "They are signed with the face"
+      },
+      {
+        "value": "correct",
+        "text": "They involve movement"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 11,
+    "type": "radio",
+    "category": "history",
+    "question": "Who co-founded the American School for the Deaf in 1817 with Thomas Hopkins Gallaudet?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Laurent Clerc"
+      },
+      {
+        "value": "wrong1",
+        "text": "Alexander Graham Bell"
+      },
+      {
+        "value": "wrong2",
+        "text": "William Stokoe"
+      },
+      {
+        "value": "wrong3",
+        "text": "I. King Jordan"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 12,
+    "type": "radio",
+    "category": "history",
+    "question": "In which city was the American School for the Deaf founded?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Boston, Massachusetts"
+      },
+      {
+        "value": "correct",
+        "text": "Hartford, Connecticut"
+      },
+      {
+        "value": "wrong2",
+        "text": "Washington, D.C."
+      },
+      {
+        "value": "wrong3",
+        "text": "Philadelphia, Pennsylvania"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 13,
+    "type": "radio",
+    "category": "history",
+    "question": "Which country was Laurent Clerc, the Deaf teacher who helped found the first American school for Deaf students, from?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "England"
+      },
+      {
+        "value": "wrong2",
+        "text": "Germany"
+      },
+      {
+        "value": "correct",
+        "text": "France"
+      },
+      {
+        "value": "wrong3",
+        "text": "Canada"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 14,
+    "type": "radio",
+    "category": "history",
+    "question": "Which US President signed the 1864 charter that let what became Gallaudet University grant college degrees?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Ulysses S. Grant"
+      },
+      {
+        "value": "wrong2",
+        "text": "Theodore Roosevelt"
+      },
+      {
+        "value": "wrong3",
+        "text": "Andrew Johnson"
+      },
+      {
+        "value": "correct",
+        "text": "Abraham Lincoln"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 15,
+    "type": "radio",
+    "category": "history",
+    "question": "What was the 1880 Milan Conference known for?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Promoting oral education over sign language in deaf schools"
+      },
+      {
+        "value": "wrong1",
+        "text": "Creating the first ASL dictionary"
+      },
+      {
+        "value": "wrong2",
+        "text": "Founding Gallaudet University"
+      },
+      {
+        "value": "wrong3",
+        "text": "Passing a law that required interpreters"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 16,
+    "type": "radio",
+    "category": "history",
+    "question": "Who published research in 1960 showing that ASL is a true language?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Thomas Hopkins Gallaudet"
+      },
+      {
+        "value": "correct",
+        "text": "William Stokoe"
+      },
+      {
+        "value": "wrong2",
+        "text": "Alexander Graham Bell"
+      },
+      {
+        "value": "wrong3",
+        "text": "Laurent Clerc"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 17,
+    "type": "radio",
+    "category": "history",
+    "question": "Who became Gallaudet University's first Deaf president after the 1988 Deaf President Now protest?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Laurent Clerc"
+      },
+      {
+        "value": "wrong2",
+        "text": "Edward Miner Gallaudet"
+      },
+      {
+        "value": "correct",
+        "text": "I. King Jordan"
+      },
+      {
+        "value": "wrong3",
+        "text": "William Stokoe"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 18,
+    "type": "radio",
+    "category": "history",
+    "question": "Which 1973 law was the first federal law to prohibit disability discrimination in programs that receive federal funding?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "The Civil Rights Act of 1964"
+      },
+      {
+        "value": "wrong2",
+        "text": "The Voting Rights Act"
+      },
+      {
+        "value": "wrong3",
+        "text": "The Social Security Act"
+      },
+      {
+        "value": "correct",
+        "text": "Section 504 of the Rehabilitation Act"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 19,
+    "type": "radio",
+    "category": "history",
+    "question": "Robert Weitbrecht, a Deaf scientist, invented a device in the 1960s that made which technology possible?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Phone calls with text, using the TTY"
+      },
+      {
+        "value": "wrong1",
+        "text": "The cochlear implant"
+      },
+      {
+        "value": "wrong2",
+        "text": "Video relay services"
+      },
+      {
+        "value": "wrong3",
+        "text": "The hearing aid"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 20,
+    "type": "radio",
+    "category": "history",
+    "question": "Gallaudet University is credited with inventing which football tradition so opponents could not see its signed plays?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "The kickoff"
+      },
+      {
+        "value": "correct",
+        "text": "The huddle"
+      },
+      {
+        "value": "wrong2",
+        "text": "The coin toss"
+      },
+      {
+        "value": "wrong3",
+        "text": "The two-minute warning"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 21,
+    "type": "radio",
+    "category": "history",
+    "question": "Martha's Vineyard had a high rate of hereditary deafness in the 1800s. What came out of it?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "A ban on sign language"
+      },
+      {
+        "value": "wrong2",
+        "text": "The first Deaf university"
+      },
+      {
+        "value": "correct",
+        "text": "A local sign language used by Deaf and hearing residents that influenced ASL"
+      },
+      {
+        "value": "wrong3",
+        "text": "A new form of Morse code"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 22,
+    "type": "radio",
+    "category": "history",
+    "question": "In what year was the National Association of the Deaf founded?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "1817"
+      },
+      {
+        "value": "wrong2",
+        "text": "1920"
+      },
+      {
+        "value": "wrong3",
+        "text": "1965"
+      },
+      {
+        "value": "correct",
+        "text": "1880"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 23,
+    "type": "radio",
+    "category": "culture",
+    "question": "What does a capital \"D\" in \"Deaf\" usually refer to?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Deaf culture and community"
+      },
+      {
+        "value": "wrong1",
+        "text": "A severe level of hearing loss"
+      },
+      {
+        "value": "wrong2",
+        "text": "People who use hearing aids"
+      },
+      {
+        "value": "wrong3",
+        "text": "People who cannot speak"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 24,
+    "type": "radio",
+    "category": "culture",
+    "question": "What is a polite way to get a Deaf person's attention?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Shout their name from across the room"
+      },
+      {
+        "value": "correct",
+        "text": "Wave or lightly tap their shoulder"
+      },
+      {
+        "value": "wrong2",
+        "text": "Grab their arm hard"
+      },
+      {
+        "value": "wrong3",
+        "text": "Ignore them until they notice"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 25,
+    "type": "radio",
+    "category": "culture",
+    "question": "When talking with a Deaf person through an interpreter, who should you look at and speak to?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "The interpreter"
+      },
+      {
+        "value": "wrong2",
+        "text": "Neither, look at the floor"
+      },
+      {
+        "value": "correct",
+        "text": "The Deaf person"
+      },
+      {
+        "value": "wrong3",
+        "text": "Whoever spoke last"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 26,
+    "type": "radio",
+    "category": "culture",
+    "question": "What is \"Deaf applause\"?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Stomping on the floor"
+      },
+      {
+        "value": "wrong2",
+        "text": "Tapping the table"
+      },
+      {
+        "value": "wrong3",
+        "text": "Holding hands over the heart"
+      },
+      {
+        "value": "correct",
+        "text": "Raising both hands and shaking or waving them"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 27,
+    "type": "radio",
+    "category": "culture",
+    "question": "What does CODA stand for?",
+    "options": [
+      {
+        "value": "correct",
+        "text": "Child of Deaf Adults"
+      },
+      {
+        "value": "wrong1",
+        "text": "Center of Deaf Advocacy"
+      },
+      {
+        "value": "wrong2",
+        "text": "Code of Deaf Access"
+      },
+      {
+        "value": "wrong3",
+        "text": "Child of Deaf Artists"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 28,
+    "type": "radio",
+    "category": "culture",
+    "question": "Which Deaf actor won the Academy Award for Best Actress for Children of a Lesser God?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "Nyle DiMarco"
+      },
+      {
+        "value": "correct",
+        "text": "Marlee Matlin"
+      },
+      {
+        "value": "wrong2",
+        "text": "Troy Kotsur"
+      },
+      {
+        "value": "wrong3",
+        "text": "Millicent Simmonds"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 29,
+    "type": "radio",
+    "category": "culture",
+    "question": "Which film about a hearing teen in a Deaf family won the Academy Award for Best Picture in 2022?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "A Quiet Place"
+      },
+      {
+        "value": "wrong2",
+        "text": "Sound of Metal"
+      },
+      {
+        "value": "correct",
+        "text": "CODA"
+      },
+      {
+        "value": "wrong3",
+        "text": "The Piano"
+      }
+    ],
+    "correct_answer": "correct"
+  },
+  {
+    "id": 30,
+    "type": "radio",
+    "category": "culture",
+    "question": "On which date is the International Day of Sign Languages observed?",
+    "options": [
+      {
+        "value": "wrong1",
+        "text": "March 3"
+      },
+      {
+        "value": "wrong2",
+        "text": "June 21"
+      },
+      {
+        "value": "wrong3",
+        "text": "December 3"
+      },
+      {
+        "value": "correct",
+        "text": "September 23"
+      }
+    ],
+    "correct_answer": "correct"
+  }
+]

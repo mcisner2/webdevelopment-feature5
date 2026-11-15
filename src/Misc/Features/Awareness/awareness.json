@@ -1,16 +1,163 @@
 [
-    {
-      "id": 1,
-      "title": "National Association of the Deaf (NAD)",
-      "description": "The NAD is the leading civil rights organization for deaf and hard of hearing people in the United States, advocating for equal access in education, employment, healthcare, and technology.",
-      "category": "organization",
-      "link": "https://www.nad.org"
-    },
-    {
-        "id": 2,
-        "title": "American Society for Deaf Children (ASDC)",
-        "description": "The ASDC is a family-led organization that supports parents and families of deaf and hard of hearing children, promoting ASL and bilingual (ASL/English) approaches so families can communicate fully with their deaf children.",
-        "category": "organization",
-        "link": "https://deafchildren.org"
-      }
+  {
+    "id": 1,
+    "title": "National Association of the Deaf (NAD)",
+    "description": "The NAD is a civil rights organization for deaf and hard of hearing people in the United States, advocating for equal access in education, employment, healthcare, and technology.",
+    "category": "organization",
+    "link": "https://www.nad.org"
+  },
+  {
+    "id": 2,
+    "title": "American Society for Deaf Children (ASDC)",
+    "description": "The ASDC is a family-led organization that supports parents and families of deaf and hard of hearing children, promoting ASL and bilingual (ASL/English) approaches so families can communicate fully with their deaf children.",
+    "category": "organization",
+    "link": "https://deafchildren.org"
+  },
+  {
+    "id": 3,
+    "title": "Registry of Interpreters for the Deaf (RID)",
+    "description": "RID sets professional standards for sign language interpreters and works to expand access to qualified interpreting in schools, workplaces, courts, and medical settings.",
+    "category": "organization",
+    "link": "https://rid.org"
+  },
+  {
+    "id": 4,
+    "title": "Gallaudet University",
+    "description": "Gallaudet in Washington, D.C. is the university built for Deaf and hard of hearing students. Instruction happens in ASL and English, and it is a center for Deaf culture, research, and advocacy.",
+    "category": "organization",
+    "link": "https://www.gallaudet.edu"
+  },
+  {
+    "id": 5,
+    "title": "National Technical Institute for the Deaf (NTID)",
+    "description": "NTID is one of the colleges of Rochester Institute of Technology and serves Deaf and hard of hearing students, who study alongside hearing peers with interpreting and captioning support.",
+    "category": "organization",
+    "link": "https://www.ntid.rit.edu"
+  },
+  {
+    "id": 6,
+    "title": "National Deaf Center",
+    "description": "The National Deaf Center shares research and resources to help Deaf people succeed in education and employment after high school.",
+    "category": "organization",
+    "link": "https://nationaldeafcenter.org"
+  },
+  {
+    "id": 7,
+    "title": "Hands & Voices",
+    "description": "Hands & Voices is a parent-driven organization that supports families of deaf and hard of hearing children, whatever communication approach the family chooses.",
+    "category": "organization",
+    "link": "https://handsandvoices.org"
+  },
+  {
+    "id": 8,
+    "title": "Hearing Loss Association of America (HLAA)",
+    "description": "HLAA advocates for and supports people with hearing loss, with resources on captioning, hearing technology, and workplace access.",
+    "category": "organization",
+    "link": "https://www.hearingloss.org"
+  },
+  {
+    "id": 9,
+    "title": "World Federation of the Deaf",
+    "description": "The World Federation of the Deaf is an international organization of national Deaf associations that works for the human rights of Deaf people and for recognition of sign languages.",
+    "category": "organization",
+    "link": "https://wfdeaf.org"
+  },
+  {
+    "id": 10,
+    "title": "Video Relay Services (VRS)",
+    "description": "VRS lets Deaf people make phone calls in ASL through a live video interpreter, who voices the conversation to a hearing person and signs their reply.",
+    "category": "technology",
+    "link": ""
+  },
+  {
+    "id": 11,
+    "title": "Captioning and Accessibility Laws",
+    "description": "Accessibility laws, building on the Americans with Disabilities Act, increasingly call for captions on video and live events, which helps people who are Deaf or hard of hearing.",
+    "category": "technology",
+    "link": ""
+  },
+  {
+    "id": 12,
+    "title": "Described and Captioned Media Program (DCMP)",
+    "description": "The DCMP provides free captioned and described educational media for schools and families.",
+    "category": "technology",
+    "link": "https://dcmp.org"
+  },
+  {
+    "id": 13,
+    "title": "ASL in Schools and Universities",
+    "description": "A growing number of schools and colleges offer ASL courses and programs, which helps normalize ASL as a full language and grows the number of hearing people who can sign.",
+    "category": "education",
+    "link": ""
+  },
+  {
+    "id": 14,
+    "title": "Learn ASL Online (Lifeprint)",
+    "description": "Lifeprint offers free online ASL lessons, a sign dictionary, and cultural notes, taught by a long-time ASL instructor.",
+    "category": "learning",
+    "link": "https://www.lifeprint.com"
+  },
+  {
+    "id": 15,
+    "title": "Learn ASL Online (Start ASL)",
+    "description": "Start ASL offers free online beginner ASL lessons, including vocabulary and practice exercises.",
+    "category": "learning",
+    "link": "https://www.startasl.com"
+  },
+  {
+    "id": 16,
+    "title": "Learn the Manual Alphabet",
+    "description": "Fingerspelling is the best first step. Practice the 26 letters, and use this site's Signs page to see the handshapes. J and Z involve movement.",
+    "category": "learning",
+    "link": ""
+  },
+  {
+    "id": 17,
+    "title": "Support Qualified Interpreters",
+    "description": "Ask for qualified sign language interpreters at public events, school functions, and workplaces, and speak up when an accommodation is missing.",
+    "category": "how-to-help",
+    "link": ""
+  },
+  {
+    "id": 18,
+    "title": "Follow and Amplify Deaf Voices",
+    "description": "Follow Deaf creators, journalists, and advocates and share their work. Awareness works best when Deaf people tell their own stories.",
+    "category": "how-to-help",
+    "link": ""
+  },
+  {
+    "id": 19,
+    "title": "Include Captions in Your Own Content",
+    "description": "Add captions to videos you post and use accessible meeting tools, so Deaf and hard of hearing people can take part.",
+    "category": "how-to-help",
+    "link": ""
+  },
+  {
+    "id": 20,
+    "title": "Getting a Deaf Person's Attention",
+    "description": "Wave, tap a shoulder lightly, or flick the lights. Do not shout, and do not grab or throw things.",
+    "category": "etiquette",
+    "link": ""
+  },
+  {
+    "id": 21,
+    "title": "Talking Through an Interpreter",
+    "description": "Look at and speak directly to the Deaf person, not the interpreter, and speak at a natural pace. Say \"you\", not \"tell her\".",
+    "category": "etiquette",
+    "link": ""
+  },
+  {
+    "id": 22,
+    "title": "Face the Person You Are Talking To",
+    "description": "Keep your face visible and in good light, do not cover your mouth, and be patient. Writing or typing is fine when you do not sign.",
+    "category": "etiquette",
+    "link": ""
+  },
+  {
+    "id": 23,
+    "title": "Respect Deaf Culture and Identity",
+    "description": "Many Deaf people see Deafness as a culture and a language community, not a disability to fix. Ask people how they prefer to communicate, and do not assume.",
+    "category": "etiquette",
+    "link": ""
+  }
 ]
